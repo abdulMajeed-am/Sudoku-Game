@@ -1,42 +1,50 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* global.css */
+.sudoku-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 8px;
+  justify-content: center;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.sudoku-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.button-container {
+  margin-top: 20px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.button {
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4c91af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 8px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.button:last-child {
+  margin-right: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
 }
