@@ -11,7 +11,11 @@ A web-based Sudoku solver built using React. This application allows users to in
 
 ## Technologies Used
 
+<<<<<<< HEAD
 - **Frontend**: React.js, Next.js, JavaScript (ES6), HTML, CSS
+=======
+- **Frontend**: React.js, JavaScript (ES6), HTML, CSS
+>>>>>>> 96923626c620613becc45a7f1f26608c35ab5ede
 - **Styling**: CSS (global.css)
 - **Algorithm**: Backtracking algorithm for solving Sudoku puzzles
 
